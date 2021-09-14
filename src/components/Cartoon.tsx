@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Cartoon.module.css';
 
 interface CartoonProps {
   id: number,
@@ -8,11 +9,11 @@ interface CartoonProps {
 
 const Cartoon: React.FC<CartoonProps> = ({id, name, email}) => {
 
-  return <li>
-    <img src={`https://robohash.org/${id}`} alt="cartoon" />
+  return <div className={styles.cardContainer}>
+    <img src={`https://robohash.org/${id + 100}`} alt="cartoon" />
     <h2>{name}</h2>
     <p>{email}</p>
-    </li>;
+    </div>;
 }
 
 export default Cartoon;

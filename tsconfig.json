@@ -18,7 +18,10 @@
     "resolveJsonModule": true, // 允许在tsx中引入json文件
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "plugins": [{
+      "name": "typescript-plugin-css-modules"  // 配置完插件后编辑器有了css的提示
+    }]
   },
   "include": [
     "src"
