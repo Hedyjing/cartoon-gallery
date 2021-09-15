@@ -1,6 +1,6 @@
 import { appendFile } from 'fs';
 import React, { useContext } from 'react';
-import { appContext } from '..';
+import { appContext } from '../AppState';
 import styles from './Cartoon.module.css';
 
 interface CartoonProps {
