@@ -10,7 +10,7 @@ interface CartoonProps {
 const Cartoon: React.FC<CartoonProps> = ({id, name, email}) => {
 
   return <div className={styles.cardContainer}>
-    <img src={`https://robohash.org/${id + 100}`} alt="cartoon" />
+    <img src={`https://robohash.org/${name}`} alt="cartoon" />
     <h2>{name}</h2>
     <p>{email}</p>
     </div>;
