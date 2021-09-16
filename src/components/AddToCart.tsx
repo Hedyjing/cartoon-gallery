@@ -21,3 +21,18 @@ export const withAddToCart = (ChildComponent: React.ComponentType<CartoonProps>)
     return <ChildComponent {...props} addToCart={addToCart}/>
   }
 }
+
+export const useAddToCart = () => {
+  const setState = useContext(setStateContext);
+  const addToCart = (id: number, name: string) => {
+    if (setState) {
+      setState((state) => {
+        return {
+          ...state,
+          shoppingCart: { items: [...state.shoppingCart.items, { id: id, name: name }] }
+        }
+      })
+    }
+  }
+  return addToCart
+}
