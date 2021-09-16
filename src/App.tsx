@@ -13,15 +13,11 @@ interface State {
 }
 
 const App: React.FC = () => {
-  const [count, setCount] = useState(0);
   const [cartoonGallery, setCartoonGallery] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>();
 
   // 当不传入第二个参数, 每次渲染结束后都会被调用, 相当于componentDidUpdate
-  useEffect(() => {
-    document.title = `点击${count}次`;
-  }, [count])
   // 当不传入第二个参数, 会不断地请求数据
   useEffect(() => {
     let fetchData = async () => {
@@ -43,10 +39,6 @@ const App: React.FC = () => {
         <img src={logo} alt="logo" className={styles.appLogo} />
         <h1>Cartoon Gallery Card Show</h1>
       </div>
-      <button onClick={() => {
-        setCount(count + 1);
-      }}>Click</button>
-      <span>count: {count}</span>
       <ShoppingCart />
       {(error || error === '') && <div>网站错误: {error}</div>}
       {!loading ?

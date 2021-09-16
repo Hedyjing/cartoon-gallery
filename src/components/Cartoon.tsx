@@ -17,12 +17,12 @@ const Cartoon: React.FC<CartoonProps> = ({ id, name, email, addToCart }) => {
   const value = useContext(appContext);
 
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} onClick={() => addToCart(id, name)}>
       <img src={`https://robohash.org/${name}`} alt="cartoon" />
       <h2>{name}</h2>
       <p>{email}</p>
       <p>作者: {value.username}</p>
-      <button onClick={() => addToCart(id, name)}>加入购物车</button>
+      <button>加入购物车</button>
     </div>
   )
 }

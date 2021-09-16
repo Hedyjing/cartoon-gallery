@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
 import styles from './ShoppingCart.module.css';
 import { FiShoppingCart } from 'react-icons/fi';
-import {appContext} from '../AppState'
+import {appContext, setStateContext} from '../AppState'
 
 
 const ShoppingCart: React.FC = () => {
   const value = useContext(appContext);
+  const setState = useContext(setStateContext);
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -18,8 +19,14 @@ const ShoppingCart: React.FC = () => {
     <div className={styles.cartContainer}>
       <button className={styles.button} onClick={handleClick}>
         <FiShoppingCart />
-        <span>购物车{value.shoppingCart.items.length}（件）</span>
+        <span>购物车({value.shoppingCart.items.length}件)</span>
       </button>
+      <button onClick={()=>setState?.(() => {return {
+        ...value,
+        shoppingCart:{
+          items: []
+        }
+      }})}>清空</button>
       <div className={styles.cartDropDown}
         style={{
           display: isOpen ? 'block' : 'none'
