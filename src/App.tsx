@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import logo from './assets/images/logo.svg';
 import cartoons from './mockdata/cartoon.json'
-import Cartoon from './components/Cartoon'
+import Cartoon from './components/Cartoon';
+import CartoonDiscount from './components/CartoonDiscount';
 import styles from './App.module.css';
 import ShoppingCart from './components/ShoppingCart';
 
@@ -50,7 +51,9 @@ const App: React.FC = () => {
       {(error || error === '') && <div>网站错误: {error}</div>}
       {!loading ?
         <div className={styles.robotList}>
-          {cartoonGallery.map(c => <Cartoon id={c.id} name={c.name} email={c.email} />)}
+          {cartoonGallery.map((c, index) => index % 2? <Cartoon id={c.id} name={c.name} email={c.email} />
+          : <CartoonDiscount id={c.id} name={c.name} email={c.email}></CartoonDiscount>
+          )}
         </div>
         : <h1>Loading</h1>
       }
