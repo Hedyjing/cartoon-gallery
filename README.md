@@ -1,6 +1,12 @@
 # Getting Started with Create React App
+Demo link: https://hedyjing.github.io/cartoon-gallery/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## instructions
+- clone code
+- run `npm install` to install dep in cartoon-gallery directory
+- run `npm start`
 
 ## Available Scripts
 
