@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cartoon-gallery/static/css/main.03dec371.chunk.css",
+    "main.js": "/cartoon-gallery/static/js/main.1b310ef3.chunk.js",
+    "main.js.map": "/cartoon-gallery/static/js/main.1b310ef3.chunk.js.map",
+    "runtime-main.js": "/cartoon-gallery/static/js/runtime-main.10e98186.js",
+    "runtime-main.js.map": "/cartoon-gallery/static/js/runtime-main.10e98186.js.map",
+    "static/js/2.638967f3.chunk.js": "/cartoon-gallery/static/js/2.638967f3.chunk.js",
+    "static/js/2.638967f3.chunk.js.map": "/cartoon-gallery/static/js/2.638967f3.chunk.js.map",
+    "static/js/3.65fc0a75.chunk.js": "/cartoon-gallery/static/js/3.65fc0a75.chunk.js",
+    "static/js/3.65fc0a75.chunk.js.map": "/cartoon-gallery/static/js/3.65fc0a75.chunk.js.map",
+    "index.html": "/cartoon-gallery/index.html",
+    "static/css/main.03dec371.chunk.css.map": "/cartoon-gallery/static/css/main.03dec371.chunk.css.map",
+    "static/js/2.638967f3.chunk.js.LICENSE.txt": "/cartoon-gallery/static/js/2.638967f3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/cartoon-gallery/static/media/Slidefu-Regular-2.e4c9a5f7.ttf",
+    "static/media/logo.a8e0aa77.svg": "/cartoon-gallery/static/media/logo.a8e0aa77.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10e98186.js",
+    "static/js/2.638967f3.chunk.js",
+    "static/css/main.03dec371.chunk.css",
+    "static/js/main.1b310ef3.chunk.js"
+  ]
+}
